@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">实验一 · Android 开发基础</string>
+    <string name="welcome">Hello, Android!</string>
+    <string name="description">第一个 Android 应用</string>
+</resources>

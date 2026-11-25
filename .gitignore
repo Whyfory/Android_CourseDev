@@ -1,0 +1,11 @@
+# Android Studio、本机 SDK 路径和构建产物
+.idea/
+*.iml
+local.properties
+.gradle/
+.kotlin/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+.DS_Store
