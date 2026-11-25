@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="实验二 · Android 界面布局"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/open_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="线性布局"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/open_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="表格布局"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/open_calculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="约束布局 1 · 计算器"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/open_flight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="约束布局 2 · 太空航班"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/open_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compose · 课程学习任务"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:stretchColumns="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#605F63"
+        android:padding="8dp"
+        android:text="Hello TableLayout"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- 三列依次显示标记、操作名称和快捷键。stretchColumns 让中间一列填满剩余空间。 -->
+    <TableRow>
+        <TextView style="@style/TableCell" android:text="" />
+        <TextView style="@style/TableCell" android:text="Open…" />
+        <TextView style="@style/TableCell" android:gravity="end" android:text="Ctrl-O" />
+    </TableRow>
+
+    <TableRow>
+        <TextView style="@style/TableCell" android:text="" />
+        <TextView style="@style/TableCell" android:text="Save…" />
+        <TextView style="@style/TableCell" android:gravity="end" android:text="Ctrl-S" />
+    </TableRow>
+
+    <TableRow>
+        <TextView style="@style/TableCell" android:text="" />
+        <TextView style="@style/TableCell" android:text="Save As…" />
+        <TextView style="@style/TableCell" android:gravity="end" android:text="Ctrl-Shift-S" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA" />
+
+    <TableRow>
+        <TextView style="@style/TableCell" android:text="X" />
+        <TextView style="@style/TableCell" android:text="Import…" />
+        <TextView style="@style/TableCell" android:gravity="end" android:text="" />
+    </TableRow>
+
+    <TableRow>
+        <TextView style="@style/TableCell" android:text="X" />
+        <TextView style="@style/TableCell" android:text="Export…" />
+        <TextView style="@style/TableCell" android:gravity="end" android:text="Ctrl-E" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA" />
+
+    <TableRow>
+        <TextView style="@style/TableCell" android:text="" />
+        <TextView style="@style/TableCell" android:text="Quit" />
+        <TextView style="@style/TableCell" android:gravity="end" android:text="" />
+    </TableRow>
+</TableLayout>

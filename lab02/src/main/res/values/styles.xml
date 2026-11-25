@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GridCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/grid_cell</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#E5E5E5</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TableCell">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">6dp</item>
+        <item name="android:paddingVertical">5dp</item>
+        <item name="android:textColor">#EEEEEE</item>
+    </style>
+
+    <style name="FlightTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#343434</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="FlightPlace">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:background">#27633A</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/flight_tabs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#E7E7E7"
+            android:orientation="horizontal"
+            android:paddingVertical="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/FlightTab"
+                android:drawableTop="@drawable/space_station_icon"
+                android:text="Space Stations" />
+
+            <TextView
+                style="@style/FlightTab"
+                android:drawableTop="@drawable/rocket_icon"
+                android:text="Flights" />
+
+            <TextView
+                style="@style/FlightTab"
+                android:drawableTop="@drawable/rover_icon"
+                android:text="Rovers" />
+        </LinearLayout>
+
+        <!-- 两个地点沿水平链分配空间，切换按钮叠在两者之间。 -->
+        <TextView
+            android:id="@+id/origin"
+            style="@style/FlightPlace"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="24dp"
+            android:text="DCA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/destination"
+            app:layout_constraintTop_toBottomOf="@id/flight_tabs" />
+
+        <TextView
+            android:id="@+id/destination"
+            style="@style/FlightPlace"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="48dp"
+            android:text="MARS"
+            app:layout_constraintStart_toEndOf="@id/origin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/origin" />
+
+        <ImageButton
+            android:id="@+id/swap"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="#FAFAFA"
+            android:contentDescription="交换出发地和目的地"
+            android:elevation="2dp"
+            android:padding="13dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/double_arrows"
+            app:layout_constraintStart_toEndOf="@id/origin"
+            app:layout_constraintEnd_toStartOf="@id/destination"
+            app:layout_constraintTop_toTopOf="@id/origin"
+            app:layout_constraintBottom_toBottomOf="@id/origin" />
+
+        <Switch
+            android:id="@+id/one_way"
+            android:layout_width="148dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:background="#A44F10"
+            android:paddingHorizontal="10dp"
+            android:text="Round Trip"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/origin" />
+
+        <TextView
+            android:id="@+id/traveller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#A44F10"
+            android:padding="8dp"
+            android:text="1 Traveller"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@id/one_way"
+            app:layout_constraintTop_toBottomOf="@id/one_way" />
+
+        <ImageView
+            android:id="@+id/galaxy"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:contentDescription="星系"
+            android:src="@drawable/galaxy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/traveller"
+            app:layout_constraintBottom_toTopOf="@id/depart" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="火箭"
+            android:src="@drawable/rocket_icon"
+            app:layout_constraintEnd_toStartOf="@id/galaxy"
+            app:layout_constraintTop_toTopOf="@id/galaxy"
+            app:layout_constraintBottom_toBottomOf="@id/galaxy" />
+
+        <Button
+            android:id="@+id/depart"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#27633A"
+            android:text="Depart"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
