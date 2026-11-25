@@ -7,11 +7,12 @@
 | `lab01` | Android 开发基础。启动应用并确认显示 `Hello, Android!`。 |
 | `lab02` | Android 界面布局。首页可打开线性布局、表格布局、计算器、太空航班和 Compose 任务列表。 |
 | `lab03` | Android 界面组件。演示动物列表与通知、自定义对话框、XML 菜单、ActionMode 和 RecyclerView。 |
+| [`midterm-notepad`](midterm-notepad/README.md) | 期中项目拾页 NotePad。包含笔记查询、待办、界面偏好、导出和备份恢复。 |
 
 也可以在根目录打开 PowerShell，用 Gradle Wrapper 构建：
 
 ```powershell
-.\gradlew.bat :lab01:assembleDebug :lab02:assembleDebug :lab03:assembleDebug
+.\gradlew.bat :lab01:assembleDebug :lab02:assembleDebug :lab03:assembleDebug :midterm-notepad:assembleDebug
 ```
 
 学习入口是每个模块的 `src/main`。其中 `AndroidManifest.xml` 声明应用入口，`java/` 存放界面逻辑，`res/` 存放布局、文字和图片资源。

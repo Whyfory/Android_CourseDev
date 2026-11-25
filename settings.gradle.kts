@@ -23,4 +23,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Android_Dev"
-include(":lab01", ":lab02", ":lab03")
+include(":lab01", ":lab02", ":lab03", ":midterm-notepad")
